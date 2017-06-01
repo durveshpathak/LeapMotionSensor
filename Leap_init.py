@@ -86,11 +86,6 @@ def main():
 				elif (pitch > -15 and pitch<15 and roll >-15 and roll < 15):
 					print "hover"	
 					ser.write('H')	
-
-				
-#			print "Frame id: %d, timestamp: %d, hands: %d, fingers: %d, tools: %d, gestures: %d" % (frame.id, frame.timestamp, len(frame.hands), len(frame.fingers), len(frame.tools), len(frame.gestures()))
-#			print "grab strength hand x: %d, palm position: %d, hands: %d,rotation: %d, tools: %d, gestures: %d" % (hand.grab_strength, hand.palm_position, len(frame.hands), rotation_y, len(frame.tools), len(frame.gestures()))
-
 	listener = SampleListener()
 	controller = Leap.Controller()
 
